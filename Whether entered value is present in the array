@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+
+	public static void main(String[] args) {
+	   int arr[]={1,2,3,4,5};
+	   Scanner s = new Scanner(System.in);
+	   System.out.print("Enter Value: ");
+	   int value = s.nextInt();
+	   
+	   boolean arrayPresence=false;
+	   
+	   for(int x:arr){
+	       if(x==value){
+	           arrayPresence = true;
+	       }
+	   }
+	   if(arrayPresence){
+	       System.out.println("The entered value " +value+ " is present in the array");
+	   }
+	   else{
+	       System.out.println("The entered value " +value+ " is not present in the array");
+	   }
+	}
+}
